@@ -1,0 +1,32 @@
+
+@startuml
+title Linienfolger – State Machine
+
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam ArrowColor #555555
+
+start
+
+while (Programm aktiv?) is (Ja)
+
+    :Sensoren auslesen;
+
+    if (Mitte erkennt Linie?) then (Ja)
+        #DCEBFA:GERADE;
+    elseif (Links erkennt Linie?) then (Ja)
+        #DCEBFA:LINKS;
+    elseif (Rechts erkennt Linie?) then (Ja)
+        #DCEBFA:RECHTS;
+    else (Nein)
+        #DCEBFA:SUCHE;
+    endif
+
+    :Motoren ansteuern;
+
+endwhile (Nein)
+
+stop
+@enduml

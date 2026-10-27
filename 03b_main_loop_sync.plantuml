@@ -1,0 +1,45 @@
+
+@startuml
+title Arduino Alvik – LED-Farbwechsel mit Up-Taste
+
+start
+
+:Alvik initialisieren
+PERIODE_MS = 10
+touch_up_flag = False
+Farben definieren
+Rot, Grün, Blau, Weiß
+farbe_index = 0
+LED auf Rot setzen;
+
+
+repeat
+    :startzeit = ticks_ms();
+
+    if (Up-Taste gedrückt\nUND touch_up_flag == False?) then (Ja)
+        :touch_up_flag = True;
+        :farbe_index = (farbe_index + 1) % 4;
+        :LED-Farbe einstellen;
+        :Farbindex ausgeben;
+    else (Nein)
+    endif
+
+    if (Up-Taste losgelassen?) then (Ja)
+        :touch_up_flag = False;
+    else (Nein)
+    endif
+
+    while (Vergangene Zeit <= 10 ms?) is (Ja)
+        :dauer = ticks_diff(ticks_ms(), startzeit);
+    endwhile (Nein)
+
+    :Vergangene Zeit ausgeben;
+
+repeat while (Kein KeyboardInterrupt?) is (Ja) not (Nein)
+
+:Programm beendet ausgeben;
+:LED ausschalten (0, 0, 0);
+:alvik.stop();
+
+stop
+@enduml

@@ -1,0 +1,78 @@
+
+@startuml
+title Arduino Alvik - Linienfolger mit P-Regler
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam activity {
+  BackgroundColor #E8F0FA
+  BorderColor #4472C4
+  DiamondBackgroundColor #FFF2CC
+  DiamondBorderColor #C49A37
+  StartColor #477021
+  EndColor #C0504D
+}
+
+start
+
+:ArduinoAlvik erzeugen;
+:alvik.begin();
+:Beide LEDs BLAU;
+
+while (OK-Taste gedrückt?) is (ja)
+  :50 ms warten;
+endwhile (nein)
+
+while (OK-Taste gedrückt?) is (nein)
+  :50 ms warten;
+endwhile (ja)
+
+while (Programm läuft?) is (ja)
+
+  while (CANCEL gedrückt?) is (nein)
+
+    :Liniensensoren L, M, R lesen;
+
+    :Gewichtete Summe berechnen;
+    :Linienabweichung e = 2 - Schwerpunkt;
+    :Stellgröße u = Kp * e;
+
+    if (u > 0.2?) then (ja)
+      :Linke LED ROT;
+      :Rechte LED AUS;
+    elseif (u < -0.2?) then (ja)
+      :Linke LED ROT;
+      :Rechte LED AUS;
+    else (nein)
+      :Beide LEDs GRÜN;
+    endif
+
+    :Linkes Rad = 30 - u;
+    :Rechtes Rad = 30 + u;
+    :100 ms warten;
+
+  endwhile (ja)
+
+  :CANCEL erkannt;
+
+  while (OK-Taste gedrückt?) is (nein)
+    :Beide LEDs BLAU;
+    :Motoren bremsen;
+    :100 ms warten;
+  endwhile (ja)
+
+endwhile (nein)
+
+:alvik.stop();
+stop
+
+note right
+  Die äußere Programmschleife
+  läuft im Original dauerhaft.
+
+  KeyboardInterrupt beendet
+  das Programm über try/except.
+end note
+
+@enduml
