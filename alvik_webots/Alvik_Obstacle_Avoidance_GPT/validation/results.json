@@ -1,0 +1,612 @@
+{
+  "webots": "R2025a",
+  "python": "3.15.2",
+  "date": "2026-11-03",
+  "model_revision": "front-rear orientation and optical layout",
+  "unit_tests": 32,
+  "physics_step_ms": 10,
+  "contact_sampling_ms": 10,
+  "baseline_unchanged": true,
+  "original_follower_preserved": true,
+  "collision_oracle_events": 79,
+  "scenarios": [
+    {
+      "case": "center_final",
+      "obstacle_offset_y_m": 0,
+      "width_m": 0.05,
+      "depth_m": 0.06,
+      "simulation_seconds": 65.0,
+      "contact_events": 0,
+      "events": [
+        {
+          "t": 8.82,
+          "message": "[AVOID] pass LEFT",
+          "pose": [
+            36.09740385452239,
+            0.4054435184069398,
+            0.5773971452668206
+          ]
+        },
+        {
+          "t": 8.82,
+          "message": "[STATE] TURN_OUT",
+          "pose": [
+            36.09740385452239,
+            0.4054435184069398,
+            0.5773971452668206
+          ]
+        },
+        {
+          "t": 9.92,
+          "message": "[STATE] OUT",
+          "pose": [
+            36.09740441243471,
+            0.40544300414937834,
+            58.144024887259015
+          ]
+        },
+        {
+          "t": 13.47,
+          "message": "[STATE] TURN_PARALLEL",
+          "pose": [
+            43.00105377777057,
+            12.583903832305932,
+            60.57739682408065
+          ]
+        },
+        {
+          "t": 14.620000000000001,
+          "message": "[STATE] PASS",
+          "pose": [
+            43.09929819876137,
+            12.758100071992107,
+            3.0107694307783857
+          ]
+        },
+        {
+          "t": 19.07,
+          "message": "[STATE] TURN_IN",
+          "pose": [
+            65.0958630674345,
+            13.018006812167757,
+            0.5773971512632948
+          ]
+        },
+        {
+          "t": 19.82,
+          "message": "[STATE] REJOIN",
+          "pose": [
+            65.34583209679867,
+            13.020525722003656,
+            -31.821770923504822
+          ]
+        },
+        {
+          "t": 25.07,
+          "message": "[STATE] CROSS",
+          "pose": [
+            78.22745767995572,
+            4.222541760154969,
+            -34.4226028546169
+          ]
+        },
+        {
+          "t": 27.42,
+          "message": "[STATE] ALIGN",
+          "pose": [
+            84.04278340780783,
+            0.2373345510507224,
+            -34.42260285479084
+          ]
+        },
+        {
+          "t": 28.17,
+          "message": "[STATE] FOLLOW",
+          "pose": [
+            84.16651370403272,
+            0.1525428482692201,
+            -2.0234341478271793
+          ]
+        },
+        {
+          "t": 28.17,
+          "message": "[REJOINED] 1",
+          "pose": [
+            84.16651370403272,
+            0.1525428482692201,
+            -2.0234341478271793
+          ]
+        },
+        {
+          "t": 39.02,
+          "message": "[STATE] STOP",
+          "pose": [
+            140.49447462782902,
+            -3.535019861670867,
+            -13.847495578979094
+          ]
+        }
+      ],
+      "end_position_m": [
+        0.7627914371823906,
+        -0.03311037581646327,
+        -2.7669422923690123e-05
+      ],
+      "side": "LEFT",
+      "rejoined_at_s": 28.17,
+      "heading_at_rejoin_deg": -2.0234341478271793,
+      "passed": true
+    },
+    {
+      "case": "right_final",
+      "obstacle_offset_y_m": 0.025,
+      "width_m": 0.08,
+      "depth_m": 0.06,
+      "simulation_seconds": 65.0,
+      "contact_events": 0,
+      "events": [
+        {
+          "t": 8.82,
+          "message": "[AVOID] pass RIGHT",
+          "pose": [
+            36.09740385452239,
+            0.4054435184069398,
+            0.5773971452668206
+          ]
+        },
+        {
+          "t": 8.82,
+          "message": "[STATE] TURN_OUT",
+          "pose": [
+            36.09740385452239,
+            0.4054435184069398,
+            0.5773971452668206
+          ]
+        },
+        {
+          "t": 9.92,
+          "message": "[STATE] OUT",
+          "pose": [
+            36.097403944760174,
+            0.4054436576899409,
+            -56.98923290411655
+          ]
+        },
+        {
+          "t": 13.47,
+          "message": "[STATE] TURN_PARALLEL",
+          "pose": [
+            43.245090937578524,
+            -11.63141032919176,
+            -59.42260253355283
+          ]
+        },
+        {
+          "t": 14.620000000000001,
+          "message": "[STATE] PASS",
+          "pose": [
+            43.34682633083018,
+            -11.803590829986584,
+            -1.8559751020855888
+          ]
+        },
+        {
+          "t": 19.07,
+          "message": "[STATE] TURN_IN",
+          "pose": [
+            65.34416165791701,
+            -11.62013485547869,
+            0.5773971396663313
+          ]
+        },
+        {
+          "t": 19.82,
+          "message": "[STATE] REJOIN",
+          "pose": [
+            65.59413064818669,
+            -11.617615388481742,
+            32.976551889663675
+          ]
+        },
+        {
+          "t": 24.07,
+          "message": "[STATE] CROSS",
+          "pose": [
+            75.85590197626979,
+            -4.307168007405535,
+            35.57739713023566
+          ]
+        },
+        {
+          "t": 26.42,
+          "message": "[STATE] ALIGN",
+          "pose": [
+            81.58973032199158,
+            -0.20557047445583224,
+            35.57739714531832
+          ]
+        },
+        {
+          "t": 27.17,
+          "message": "[STATE] FOLLOW",
+          "pose": [
+            81.71172671961507,
+            -0.11830255413494532,
+            3.178231298668725
+          ]
+        },
+        {
+          "t": 27.17,
+          "message": "[REJOINED] 1",
+          "pose": [
+            81.71172671961507,
+            -0.11830255413494532,
+            3.178231298668725
+          ]
+        },
+        {
+          "t": 38.42,
+          "message": "[STATE] STOP",
+          "pose": [
+            140.30493677425582,
+            -3.4064530936448336,
+            -12.875110827625743
+          ]
+        }
+      ],
+      "end_position_m": [
+        0.760536988114313,
+        -0.0324937523682988,
+        -2.7669422923686654e-05
+      ],
+      "side": "RIGHT",
+      "rejoined_at_s": 27.17,
+      "heading_at_rejoin_deg": 3.178231298668725,
+      "passed": true
+    },
+    {
+      "case": "left_final",
+      "obstacle_offset_y_m": -0.025,
+      "width_m": 0.08,
+      "depth_m": 0.06,
+      "simulation_seconds": 65.0,
+      "contact_events": 0,
+      "events": [
+        {
+          "t": 8.82,
+          "message": "[AVOID] pass LEFT",
+          "pose": [
+            36.09740385452239,
+            0.4054435184069398,
+            0.5773971452668206
+          ]
+        },
+        {
+          "t": 8.82,
+          "message": "[STATE] TURN_OUT",
+          "pose": [
+            36.09740385452239,
+            0.4054435184069398,
+            0.5773971452668206
+          ]
+        },
+        {
+          "t": 9.92,
+          "message": "[STATE] OUT",
+          "pose": [
+            36.09740441243471,
+            0.40544300414937834,
+            58.144024887259015
+          ]
+        },
+        {
+          "t": 13.47,
+          "message": "[STATE] TURN_PARALLEL",
+          "pose": [
+            43.00105377777057,
+            12.583903832305932,
+            60.57739682408065
+          ]
+        },
+        {
+          "t": 14.620000000000001,
+          "message": "[STATE] PASS",
+          "pose": [
+            43.09929819876137,
+            12.758100071992107,
+            3.0107694307783857
+          ]
+        },
+        {
+          "t": 19.07,
+          "message": "[STATE] TURN_IN",
+          "pose": [
+            65.0958630674345,
+            13.018006812167757,
+            0.5773971512632948
+          ]
+        },
+        {
+          "t": 19.82,
+          "message": "[STATE] REJOIN",
+          "pose": [
+            65.34583209679867,
+            13.020525722003656,
+            -31.821770923504822
+          ]
+        },
+        {
+          "t": 25.07,
+          "message": "[STATE] CROSS",
+          "pose": [
+            78.22745767995572,
+            4.222541760154969,
+            -34.4226028546169
+          ]
+        },
+        {
+          "t": 27.42,
+          "message": "[STATE] ALIGN",
+          "pose": [
+            84.04278340780783,
+            0.2373345510507224,
+            -34.42260285479084
+          ]
+        },
+        {
+          "t": 28.17,
+          "message": "[STATE] FOLLOW",
+          "pose": [
+            84.16651370403272,
+            0.1525428482692201,
+            -2.0234341478271793
+          ]
+        },
+        {
+          "t": 28.17,
+          "message": "[REJOINED] 1",
+          "pose": [
+            84.16651370403272,
+            0.1525428482692201,
+            -2.0234341478271793
+          ]
+        },
+        {
+          "t": 39.02,
+          "message": "[STATE] STOP",
+          "pose": [
+            140.49447462782902,
+            -3.535019861670867,
+            -13.847495578979094
+          ]
+        }
+      ],
+      "end_position_m": [
+        0.7627914371823906,
+        -0.03311037581646327,
+        -2.7669422923690123e-05
+      ],
+      "side": "LEFT",
+      "rejoined_at_s": 28.17,
+      "heading_at_rejoin_deg": -2.0234341478271793,
+      "passed": true
+    },
+    {
+      "case": "wide_final",
+      "obstacle_offset_y_m": 0,
+      "width_m": 0.1,
+      "depth_m": 0.08,
+      "simulation_seconds": 65.0,
+      "contact_events": 0,
+      "events": [
+        {
+          "t": 8.72,
+          "message": "[AVOID] pass LEFT",
+          "pose": [
+            35.566543973397714,
+            0.4002292090285458,
+            0.5481289067706266
+          ]
+        },
+        {
+          "t": 8.72,
+          "message": "[STATE] TURN_OUT",
+          "pose": [
+            35.566543973397714,
+            0.4002292090285458,
+            0.5481289067706266
+          ]
+        },
+        {
+          "t": 9.82,
+          "message": "[STATE] OUT",
+          "pose": [
+            35.56654396203916,
+            0.40022904378463003,
+            58.114756672581606
+          ]
+        },
+        {
+          "t": 13.370000000000001,
+          "message": "[STATE] TURN_PARALLEL",
+          "pose": [
+            42.47641351473421,
+            12.575161703832862,
+            60.5481285855847
+          ]
+        },
+        {
+          "t": 14.52,
+          "message": "[STATE] PASS",
+          "pose": [
+            42.574747390179354,
+            12.749307117620631,
+            2.9815011246886516
+          ]
+        },
+        {
+          "t": 18.87,
+          "message": "[STATE] TURN_IN",
+          "pose": [
+            64.07150150201318,
+            12.993194457371315,
+            0.5481289160280327
+          ]
+        },
+        {
+          "t": 19.62,
+          "message": "[STATE] REJOIN",
+          "pose": [
+            64.32147179467117,
+            12.995585792230015,
+            -31.851037035312096
+          ]
+        },
+        {
+          "t": 24.82,
+          "message": "[STATE] CROSS",
+          "pose": [
+            77.0749144602725,
+            4.275877542316021,
+            -34.451871093069144
+          ]
+        },
+        {
+          "t": 27.17,
+          "message": "[STATE] ALIGN",
+          "pose": [
+            82.88820367752182,
+            0.2877002271600835,
+            -34.45187109328659
+          ]
+        },
+        {
+          "t": 27.92,
+          "message": "[STATE] FOLLOW",
+          "pose": [
+            83.0118906206738,
+            0.20284532210082978,
+            -2.0527068166643008
+          ]
+        },
+        {
+          "t": 27.92,
+          "message": "[REJOINED] 1",
+          "pose": [
+            83.0118906206738,
+            0.20284532210082978,
+            -2.0527068166643008
+          ]
+        },
+        {
+          "t": 38.97,
+          "message": "[STATE] STOP",
+          "pose": [
+            140.41037963665016,
+            -3.3182311507845124,
+            -11.117830897045032
+          ]
+        }
+      ],
+      "end_position_m": [
+        0.7618836521839472,
+        -0.03215191475926613,
+        -2.7669422923693593e-05
+      ],
+      "side": "LEFT",
+      "rejoined_at_s": 27.92,
+      "heading_at_rejoin_deg": -2.0527068166643008,
+      "passed": true
+    },
+    {
+      "case": "cancel",
+      "obstacle_offset_y_m": 0,
+      "width_m": 0.05,
+      "depth_m": 0.06,
+      "simulation_seconds": 65.0,
+      "contact_events": 0,
+      "events": [
+        {
+          "t": 5.0200000000000005,
+          "message": "[STOPPED] press R to continue; reload to reset position",
+          "pose": [
+            15.926065332781922,
+            0.10566916692056531,
+            0.6262807210882374
+          ]
+        }
+      ],
+      "end_position_m": [
+        -0.49072600690229756,
+        0.001029378302513097,
+        -2.7669422923794207e-05
+      ],
+      "stopped_drift_m": 2.6339618474925348e-09,
+      "passed": true
+    }
+  ],
+  "geometry": {
+    "line_origins_mm": [
+      [
+        37.2,
+        16.2,
+        3
+      ],
+      [
+        37.2,
+        0,
+        3
+      ],
+      [
+        37.2,
+        -16.2,
+        3
+      ]
+    ],
+    "tof_origin_mm": [
+      39.4,
+      0,
+      27.5
+    ],
+    "caster_mm": [
+      -41.329,
+      0,
+      4.5
+    ],
+    "physical_line_receivers": 3,
+    "decorative_ir_emitters": 4,
+    "placement_basis": "photo-estimated, not physically measured"
+  },
+  "limitations": [
+    "One deterministic trial per configuration; randomSeed=42.",
+    "Sensor positions and physical properties are not hardware calibrated.",
+    "No physical Alvik run.",
+    "Finite tape; obstacle on a straight segment; stationary blocks.",
+    "Keyboard shortcuts are software-tested, not manually retested on the desktop.",
+    "The recorded 65-second navigation trials predate the compatibility patch; the corrected texture/runtime received a five-second startup/driving check, not a full custom-course evaluation."
+  ],
+  "pc_compatibility_correction": {
+    "date": "2026-11-03",
+    "prior_behavior_and_bridge_python_unchanged": true,
+    "indexed_face_sets_checked": [
+      [
+        "coord",
+        "coordIndex",
+        "ccw"
+      ]
+    ],
+    "texture_px": [
+      2048,
+      2048
+    ],
+    "runtime_override": false,
+    "simulation_seconds": 5.0,
+    "python_executable": "C:\\Users\\Votalite\\AppData\\Local\\Python\\pythoncore-3.15-64\\python.exe",
+    "end_position": [
+      -0.4955040860174608,
+      0.0009742281593783567,
+      -2.7669424004572035e-05
+    ],
+    "contacts": 0
+  }
+}
