@@ -2,10 +2,8 @@
 import network
 from time import sleep_ms
 
-# SSID = "MEIN_WLAN"
-# PASSWORT = "MEIN_PASSWORT"
-SSID = "just_a_wlan"
-PASSWORT = "4574_GERabc23!?="
+SSID = "MEIN_WLAN"
+PASSWORT = "MEIN_PASSWORT"
 
 wlan = network.WLAN(network.STA_IF)
 
